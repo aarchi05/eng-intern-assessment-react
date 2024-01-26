@@ -7,7 +7,7 @@
 import React, { useEffect, useState } from 'react';
 import StopWatch from './StopWatch';
 import StopWatchButton from './StopWatchButton';
-// import './styles.css';
+import './styles.css';
 
 export default function App() {
 
@@ -137,7 +137,7 @@ export default function App() {
   );
 }
 
-// defines helper function to format time in mm:ss:SS format for laps
+// defines helper function to format time in mm:ss:cc format for laps
 function formatTime(milliseconds: number) {
 
   /*
@@ -158,7 +158,8 @@ function formatTime(milliseconds: number) {
   const centiseconds = Math.floor((milliseconds / 10) % 100);
 
   /*
-    EXPLAIN!!
+    takes time components (minutes, seconds, and centiseconds), ensures they are formatted with 
+    leading zeros if needed, and concatenates them into a string representing a time duration.
   */
   return (
     ('0' + minutes).slice(-2) +

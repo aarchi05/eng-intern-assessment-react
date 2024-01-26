@@ -17,7 +17,7 @@ test('Stopwatch starts and stops correctly', async () => {
   // Start the stopwatch
   fireEvent.click(screen.getByRole('button', { name: /start/i }));
   
-  // Wait for a while
+  // Wait...
   await act(async () => {
     jest.advanceTimersByTime(100);
   });
@@ -28,7 +28,7 @@ test('Stopwatch starts and stops correctly', async () => {
   // Stop the stopwatch
   fireEvent.click(screen.getByRole('button', { name: /stop/i }));
 
-  // Wait for a while
+  // Wait...
   await act(async () => {
     jest.advanceTimersByTime(100);
   });
@@ -90,7 +90,7 @@ test('Stopwatch records laps correctly', () => {
   // Start the stopwatch
   fireEvent.click(screen.getByRole('button', { name: /start/i }));
 
-  // Wait for a while
+  // Wait...
   act(() => {
     jest.advanceTimersByTime(100);
   });
@@ -99,7 +99,7 @@ test('Stopwatch records laps correctly', () => {
   fireEvent.click(screen.getByRole('button', { name: /lap/i }));
   expect(screen.getByText(/lap: 1/i)).toBeInTheDocument();
 
-  // Wait for a while
+  // Wait...
   act(() => {
     jest.advanceTimersByTime(100);
   });

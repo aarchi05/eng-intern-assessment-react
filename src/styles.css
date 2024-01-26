@@ -1,0 +1,83 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .time-display {
+    font-size: 4em;
+    /* margin: 20px 0; */
+  
+    width: 1px;
+    
+  }
+  
+  .time-display span {
+    transition: all 0.2s ease; /* Adjust the duration and easing function as needed */
+    
+  }
+  
+  .buttons {
+    margin: 20px 0;
+  }
+  
+  button {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+    border-radius: 50px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 0px solid #e7e7e7;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  .lap-times {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .lap-times table {
+    width: 100%;
+  }
+  
